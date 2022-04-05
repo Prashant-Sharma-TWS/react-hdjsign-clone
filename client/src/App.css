@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Nunito&display=swap");
+/* Universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+i,
+span {
+  display: inline-block;
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.flex-bt-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Page styles */
+.product-top {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.product-image-box {
+  width: 50%;
+}
+
+.wrapper-images img {
+  transition: all 0.3s ease;
+  animation: show 0.3s ease;
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.small-slider {
+  width: 95%;
+  margin: 2em auto;
+}
+
+.product-shop {
+  width: 46%;
+}
+
+.group-title span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ratings {
+  margin: 5px 0 0;
+}
+
+.prices {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+form {
+  padding: 30px 0 0;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+form > div > p {
+  font-weight: 600;
+  padding: 10px 0;
+  color: #202020;
+}
+
+.background-img span {
+  width: 40px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  border: 2px solid #dddddd;
+}
+
+.sizes span,
+.choose-font span,
+.backing-shape span,
+.power-plug span,
+.sign-placement span,
+.lead-time span {
+  padding: 5px 10px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.type-your-text textarea {
+  padding: 7px 12px 5px;
+  border: 1px solid #cbcbcb;
+}
+
+.choose-font > div {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.choose-color span {
+  width: 30px;
+  height: 30px;
+  margin: 0px 7px 10px 0 !important;
+  border: 2px solid #ddd;
+}
+
+.preview button {
+  min-width: 130px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(225, 221, 221);
+  background-color: rgb(224, 222, 222);
+}
+
+.add-to-cart button {
+  min-width: 130px;
+  width: 75%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 14px 15px 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background: #202020;
+  border-radius: 3px;
+  border-color: #202020;
+}
+
+.add-to-cart span {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  border: 1px solid #cccccc;
+  padding: 0;
+  border-radius: 3px;
+  margin-left: 15px;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.add-to-cart span:hover {
+  background-color: pink;
+}
+
+.more-details-section {
+  margin-bottom: 100px;
+}
+
+.more-details-section-header {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.more-details-section-header span {
+  margin: 0 5%;
+}
+
+.more-details-section-shown {
+  width: 50%;
+  margin: 40px auto 0;
+  padding: 35px;
+  text-align: center;
+  line-height: 1.5em;
+  border: 2px solid #c7c7c7;
+}
+
+.more-details-section-shown h3,
+.more-details-section-shown h4 {
+  font-weight: 500;
+  color: #394263;
+}
+
+.more-details-section-shown p {
+  color: #737373;
+}
+
+.address {
+  margin: 50px 0;
+}
+.address > p:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.form-upload {
+  text-align: left;
+  flex-direction: column;
+}
+
+.form-upload label,
+.form-upload input,
+.form-upload p,
+select {
+  width: 100%;
+}
+
+.form-upload label {
+  margin-top: 15px;
+}
+.form-upload input {
+  height: 34px;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+label.label input[type="file"].image-upload {
+  position: absolute;
+  top: -1000px;
+}
+.label {
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 5px;
+  background: #dddddd;
+  display: inline-block;
+}
+label.label {
+  text-align: center;
+  margin-right: auto;
+  max-width: 300px;
+}
+.label:active {
+  background: #9fa1a0;
+}
+.label:invalid + span {
+  font-size: 14px;
+  color: #000000;
+}
+.label:valid + span {
+  color: #ffffff;
+}
+
+.form-upload p,
+.form-upload h6 {
+  margin-top: 5px;
+}
+
+.form-upload button {
+  color: #fff !important;
+  background: #333333 !important;
+  border-radius: 2px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #333333;
+  padding: 8px 30px;
+  margin-top: 20px;
+}

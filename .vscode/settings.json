@@ -1,0 +1,19 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "workbench.colorTheme": "Default Dark+",
+  "editor.fontSize": 20,
+  "editor.wordWrap": "on",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDelete": false,
+  "window.zoomLevel": -1
+}
